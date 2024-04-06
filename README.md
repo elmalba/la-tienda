@@ -33,6 +33,21 @@ npx prisma db seed
 2. Instanciar un Grafana
 3. Crear un datasource 
 4. Agregar la configuración que venga desde el storage de Vercel
-5. Crear Graficos.
+5. Crear Gráficos.
 
 ## Consultas de SQL 
+Usuarios que han comprado en la tienda y sus monto total. 
+
+```sql
+select sum,social_name FROM (select  sum(price), sale_id from sales_details group by sale_id) as t1
+JOIN sales on sales.id=t1.sale_id JOIN users on sales.user_id=users.id 
+```
+
+Nombre del usuario que más ha comprado.
+```sql
+select social_name FROM (select max(sum) 
+FROM (select SUM(price*quantity) 
+FROM sales_details JOIN sales on sales.id=sales_details.sale_id GROUP BY user_id) as t1) as t2 JOIN (select user_id,  SUM(price*quantity) 
+FROM sales_details JOIN sales on sales.id=sales_details.sale_id GROUP BY user_id) as t3 on t3.sum=t2.max 
+JOIN users on users.id=t3.user_id
+```
