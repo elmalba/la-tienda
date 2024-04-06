@@ -1,5 +1,7 @@
 Este es un proyecto en Next.js con el fin de explicar cómo desplegar una tienda con su respectiva base de datos desde vercel y poder hacer la reportería desde Grafana.
 
+![1](docs/1.png)
+
 ## Requerimientos:
 - Tener instalado Node.js versión 18 o superior.
 - Tener cuenta en GitHub
