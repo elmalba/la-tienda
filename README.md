@@ -86,3 +86,18 @@ FROM sales_details JOIN sales on sales.id=sales_details.sale_id GROUP BY user_id
 FROM sales_details JOIN sales on sales.id=sales_details.sale_id GROUP BY user_id) as t3 on t3.sum=t2.max 
 JOIN users on users.id=t3.user_id
 ```
+
+
+---
+Authors:
+  - [Manuel Alba](https://github.com/elmalba)
+  - [Laura Romero]([https://github.com/elmalba](https://github.com/lauraromero-cm)
+  - [Lucas Abello]([https://github.com/elmalba](https://github.com/lexO-dat)
+  - [Javier Oberto]([https://github.com/elmalba](https://github.com/Joberto14)
+---
+
+## License
+
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+Nuestros proyectos se construyen con la mentalidad de las aplicaciones de código abierto, utilizando la licencia MIT.
