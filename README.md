@@ -90,10 +90,10 @@ JOIN users on users.id=t3.user_id
 
 ---
 Authors:
-  - [Manuel Alba](https://github.com/elmalba])
-  - [Laura Romero]([https://github.com/elmalba](https://github.com/lauraromero-cm])
-  - [Lucas Abello]([https://github.com/elmalba](https://github.com/lexO-dat])
-  - [Javier Oberto]([https://github.com/elmalba](https://github.com/Joberto14])
+  - [Manuel Alba](https://github.com/elmalba)
+  - [Laura Romero](https://github.com/elmalba](https://github.com/lauraromero-cm)
+  - [Lucas Abello](https://github.com/elmalba](https://github.com/lexO-dat)
+  - [Javier Oberto](https://github.com/elmalba](https://github.com/Joberto14)
 ---
 
 ## License
